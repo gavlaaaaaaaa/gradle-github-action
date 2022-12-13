@@ -1,0 +1,14 @@
+name: 'Gradle Build Action'
+description: 'Run gradle build command'
+inputs:
+  option:  # id of input
+    description: 'gradle build option'
+    required: false
+outputs:
+  jar-location: # id of output
+    description: 'The location of the jar file'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.option }}
