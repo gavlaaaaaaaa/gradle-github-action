@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-./gradlew build
+gradle build
 retval=$?
 if [ ${retval} -ne 0 ]
 then
