@@ -8,4 +8,4 @@ then
 fi
 
 fname=`ls $(pwd)/app/build/libs/` 
-echo "jar-location=$(pwd)/app/build/libs/${fname}" >> $GITHUB_OUTPUT
+echo "jar-location=app/build/libs/${fname}" >> $GITHUB_OUTPUT
